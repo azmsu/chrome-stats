@@ -1,0 +1,57 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+<head>
+  <title>Getting Started Extension's Popup</title>
+  <style type="text/css">
+    body {
+      margin: 10px;
+      white-space: nowrap;
+    }
+
+    h1 {
+      font-size: 15px;
+    }
+
+    #container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+
+  <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+  <script src="popup.js"></script>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+  <h1>Chrome Stats</h1>
+  <table id="stats">
+    <thead>
+      <tr>
+        <th>Domain</th>
+        <th>Elapsed Time</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  </br>
+
+  <button id="clear">Delete all data</button>
+</body>
+
+</html>

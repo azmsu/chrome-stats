@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chrome Stats",
+  "description":
+    "This extension allows the user to keep track of time spent on websites.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icons/icon128.png",
+    "default_popup": "popup.html",
+    "default_title": "Check stats."
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "storage",
+    "http://sitereview.bluecoat.com/rest/categorization"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "scripts": ["jquery-3.2.1.min.js", "background.js"]
+  }
+}
