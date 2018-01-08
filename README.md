@@ -1,3 +1,5 @@
+# Chrome Stats
+
 This is a Google Chrome extension that records the amount of time you spend on each webpage you visit. The time is recorded by domain name.
 
 Coming soon: 
